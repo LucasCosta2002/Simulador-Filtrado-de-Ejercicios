@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Buscador múltiples campos</title>
+    <link href="https://fonts.googleapis.com/css?family=Staatliches" rel="stylesheet">  
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+
+    <h1 class="encabezado">Buscador de Ejercicios</h1>
+
+    <div class="contenedor">
+
+        
+
+        <form id="buscador">
+            <div class="row">
+            
+                <div class="three columns">
+                    <label for="musculo">Músculo</label>
+                    <select class="u-full-width" id="musculo">
+                        <option value="" selected disabled>Seleccione</option>
+                        <option value="Pectorales">Pectorales</option>
+                        <option value="Espalda">Espalda</option>
+                        <option value="Biceps">Biceps</option>
+                        <option value="Triceps">Triceps</option>
+                        <option value="Antebrazos">Antebrazos</option>
+                        <option value="Hombros">Hombros</option>
+                        <option value="Piernas">Piernas</option>
+                        <option value="Abdomen">Abdomen</option>
+                    </select>
+                </div>
+                <div class="three columns">
+                    <label for="tipo">Tipo</label>
+                    <select class="u-full-width" id="tipo">
+                            <option value="" selected >Seleccione</option>
+                            <option value="Libre">Libre</option>
+                            <option value="Mancuernas">Mancuernas/Barra</option>
+                            <option value="Maquina">Maquina</option>
+                    </select>
+                </div>
+                <div class="three columns">
+                    <label for="nivel">Nivel</label>
+                    <select class="u-full-width" id="nivel">
+                            <option value="" selected>Seleccione</option>
+                            <option value="Principiante">Princiante</option>
+                            <option value="Intermedio">Intermedio</option>
+                            <option value="Avanzado">Avanzado</option>
+                    </select>
+                </div>
+            </div>
+        </form>
+
+        <h1 id="titulo"></h1>
+        <div id="resultado"></div>
+    </div>
+
+    <script src="js/db.js"></script>
+    <script src="js/app.js"></script>
+    
+</body>
+</html>
